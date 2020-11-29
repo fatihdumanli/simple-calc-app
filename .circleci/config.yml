@@ -6,7 +6,7 @@ orbs:
 workflows:
   test_and_build:
     jobs:
-      - test_the_code
-      - build_the_code
+      - test
+      - build:
           requires:
             - test
