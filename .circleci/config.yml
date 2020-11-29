@@ -10,4 +10,4 @@ jobs:
       shell: powershell.exe
     steps:
       - checkout
-      - run: dir 
+      - run: dotnet test 
