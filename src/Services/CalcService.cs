@@ -9,7 +9,7 @@ namespace SimpleCalcApp
 
         public int Multiply(int a, int b)
         {
-            return a * b;
+            return b * a;
         }
 
         public int Subtract(int a, int b)
