@@ -4,11 +4,17 @@ orbs:
   win: circleci/windows@2.2.0
 
 jobs:
-  test:
-    executor:
+  build:
+    executor: 
       name: win/default
       shell: powershell.exe
     steps:
       - checkout
-      - run: dotnet test
-  
+      - run: dotnet build 
+  test:
+   executor:
+    name: win/default
+    shell: powershell.exe
+   steps:
+    - checkout
+    - run: dotnet test
