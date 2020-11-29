@@ -5,6 +5,8 @@ orbs:
 
 jobs:
   test_the_code:
+    executor: 
+      name: win/default
     steps:
       - checkout
       - run: dotnet test
