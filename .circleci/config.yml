@@ -11,10 +11,4 @@ jobs:
     steps:
       - checkout
       - run: dotnet test
-  build:
-    executor: 
-      name: win/default
-      shell: powershell.exe
-    steps:
-      - checkout
-      - run: dotnet build 
+  
