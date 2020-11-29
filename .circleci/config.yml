@@ -3,10 +3,13 @@ version: 2.1
 orbs:
   win: circleci/windows@2.2.0
 
+jobs:
+  test_the_code:
+    steps:
+      - checkout
+      - run: dotnet test
+
 workflows:
   test_and_build:
     jobs:
-      - test
-      - build:
-          requires:
-            - test
+      - test_the_code
