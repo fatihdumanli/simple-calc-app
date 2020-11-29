@@ -22,5 +22,5 @@ workflows:
     jobs:
       - test_the_code
       - build_the_code:
-        requires:
-          - test_the_code
+          requires:
+            - test_the_code
